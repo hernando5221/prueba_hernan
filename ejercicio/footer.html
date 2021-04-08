@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="./footer.css">
+    <title>Hello, world!</title>
+  </head>
+
+  <!--para saber por donde va el navegador y vaya marcando el nav (data-spy="scroll" data-target="#navbar")-->
+  <body data-spy="scroll" data-target="#navbar" data-offset="67">
+
+    
+    <!-- Header-->  
+    
+     <!-- se cambia light por dark para un fondo mas oscuro en el header (sticky-top para que se quede quiete el header)--> 
+     <nav  class="navbar navbar-expand-lg navbar-dark bg-dark imagen sticky-top">
+      <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img  src="./platzi-logo.png" alt="logo de platzi">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--para saber por donde va el navegador y vaya marcando el nav (data-spy="scroll" data-target="#navbar")-->
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="navbar-nav ">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#main">Conferencia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#speaker">Oradores</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#place-time">Lugar Y Fecha</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#conviertete-orador">Conviertete en Orador</a>
+                </li>
+                <li class="nav-item">
+                  <!--para agregar el model se ingresa data-bs-toggle="modal" data-bs-target="#modal-compra" con el id del model -->
+                  <a class="nav-link text-platzi"  href="#" data-bs-toggle="modal" data-bs-target="#modal-compra">Compra de Ticket</a>
+                </li>
+              </ul>
+              
+            </div>
+      </div>
+    </nav>
+    <!-- /Header-->
+    
+    <!--Main-->
+    <main id="main">
+      <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./hawaii.jpg" class="d-block w-100" alt="hawai1">
+          </div>
+          <div class="carousel-item">
+            <img src="./hawaii2.jpg" class="d-block w-100" alt="hawai2">
+          </div>
+          <div class="carousel-item">
+            <img src="./hawaii3.jpeg" class="d-block w-100" alt="hawai3">
+          </div>
+        </div>
+        
+        <div class="overlay">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 offset-md-6  text-center text-md-right">
+                <h1>Platzi Conf Hawaii</h1>
+                <p class="d-none d-md-block">Platzi es una plataforma de educación en línea latinoamericana.
+                   ​ Fue fundada en 2014 por el ingeniero colombiano 
+                  Freddy Vega y por el informático guatemalteco Christian Van Der Henst
+                </p>
+                <a class="btn btn-outline-light" href="#">Quiero ser Orador</a>
+                <!--para agregar el model se ingresa data-bs-toggle="modal" data-bs-target="#modal-compra" con el id del model -->
+                <button  class="btn btn-platzi" data-bs-toggle="modal" data-bs-target="#modal-compra" type="button">Comprar Ticket </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+
+    </main>
+    <!--/Main-->
+
+    <!--speakers (tarjeta)-->
+    <!--margin de Top px mt-4-->
+    <section id="speaker" class="mt-4 ">
+      <div class="container">
+        <div class="row">
+          <!--para central el text y colocar en mayuscula-->
+          <div class="col text-center text-uppercase">
+            <small>Conoce a los</small>
+            <h2>Oradores</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <!--carta pegada desde la pg bootstrap-->
+            <div class="card">
+              <img src="./hernan.jpg" class="card-img-top" alt="foto de Hernan">
+              <div class="card-body">
+                <!--insignias-->
+                <div class="badges mb-4">
+                  <span class="badge bg-warning text-dark">JavaScript</span>
+                  <span class="badge bg-info text-dark">React</span>
+                </div>
+                <!--/insignias-->
+                <h5 class="card-title mb-0 mb-0">Hernan Vargas</h5>
+                
+                <p class="card-text">Lorem Ipsum es simplemente texto de relleno de la 
+                  industria de la impresión y la composición tipográfica. 
+                  Lorem Ipsum ha sido el texto de relleno estándar de la industria desde 
+                  ingeniero.</p>
+                
+              </div>
+            </div>
+
+          </div>
+          <!--segunda tarjeta-->
+          <div class="col-md-4 mb-4">
+            <!--carta pegada desde la pg bootstrap-->
+            <div class="card">
+              <img src="./hernan.jpg" class="card-img-top" alt="foto de Hernan">
+              <div class="card-body">
+                 <!--insignias-->
+                 <div class="badges mb-4">
+                  <span class="badge bg-warning text-dark">JavaScript</span>
+                  <span class="badge bg-info text-dark">React</span>
+                </div>
+                <!--/insignias-->
+                <h5 class="card-title mb-0">Hernan Vargas</h5>
+                 
+                <p class="card-text">Lorem Ipsum es simplemente texto de relleno de la 
+                  industria de la impresión y la composición tipográfica. 
+                  Lorem Ipsum ha sido el texto de relleno estándar de la industria desde 
+                  ingeniero.</p>
+                
+              </div>
+            </div>
+          </div>
+          <!--tercera tarjeta-->
+          <div class="col-md-4 mb-4">
+            <!--carta pegada desde la pg bootstrap-->
+            <div class="card">
+              <img src="./hernan.jpg" class="card-img-top" alt="foto de Hernan">
+              <div class="card-body">
+                <!--insignias-->
+                <div class="badges mb-4">
+                  <span class="badge bg-warning text-dark">JavaScript</span>
+                  <span class="badge bg-info text-dark">React</span>
+                </div>
+                <!--/insignias-->
+                <h5 class="card-title mb-0">Hernan Vargas</h5>
+                  
+                <p class="card-text">Lorem Ipsum es simplemente texto de relleno de la 
+                  industria de la impresión y la composición tipográfica. 
+                  Lorem Ipsum ha sido el texto de relleno estándar de la industria desde 
+                  ingeniero.</p>
+                
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- /speaker -->
+
+    <!--fecha y hora overView-->
+    <section id="place-time">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-6 pt-2 pb-2">
+            <img src="./honolulu.jpg" alt="imagen del lugar">
+          </div>
+          <div class="col-12 col-lg-6 pt-2 pb-2">
+            <h2>Honolulu - Octubre - 2025</h2>
+            <p>Honolulu o Honolulú2​ es la capital y localidad más grande del estado de Hawái, en los Estados Unidos.
+              nota 1​ Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el 
+              nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el 
+              condado de Honolulu han formado una ciudad-condado consolidada 
+              que cubre toda la isla (aproximadamente 600 km² de superficie).</p>
+              <a class="btn btn-outline-light" href="https://es.wikipedia.org/wiki/Honolulu">Conoce Mas</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--/fecha y hora-->
+
+    <!--Conviertete en orador-->
+    <section id="conviertete-orador" class="pt-2 pb-2">
+      <div class="container">
+        <div class="row">
+          <div class="col text-uppercase text-center">
+            <small > Conviertete en un</small>
+            <h2>Orador</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+            Anotate como orador para dar una <abbr title="charla de 5 minutos">charla ignite</abbr>.
+            Cuentanos de que quieres hablar!
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3 pt-4 pb-4">
+            <form>
+              <div class="form-row">
+                <div class="form-group col">
+                  <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+                <div class="form-group co mt-1">
+                  <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col mt-2">
+                  <textarea name="text" class="form-control form-control-lg" placeholder="Sobre que quieres hablar!"></textarea>
+                  <small class="form-text text-muted">
+                    Recuerda incluir un titulo para tu charla
+                  </small>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col">
+                  <button type="button" class="btn btn-platzi">Enviar</button>
+                </div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/Conviertete en orador-->
+
+    <!-- Footer -->
+    <footer id="footer" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <a href="#">Preguntas frecuentes</a>
+              </div>
+              <div class="col">
+                <a href="#">Contactanos</a>
+              </div>
+              <div class="col">
+                <a href="#">Direccion</a>
+              </div>
+              <div class="col">
+                <a href="#">Prensa</a>
+              </div>
+              <div class="col">
+                <a href="#">Redes Sociales</a>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Modal -->
+<!-- se cambia id por modal-compra-->
+<div class="modal fade" id="modal-compra" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Comprar Ticket</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!--se agrega formulario-->
+        <form action="">
+          <div class="form-row">
+            
+            <div class="form-group col">
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+
+            </div>
+          </div>
+        </form>
+        <!--/se agrega formulario-->
+        <!--alerta en el modal-->
+        <div class="alert alert-info" role="alert">
+          Recibiras un correo de confirmacion!
+        </div>
+        <!--/alerta en el modal-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <!--se le agrega el color platzi al boton (btn-platzi)-->
+        <button type="button" class="btn btn-platzi">Comprar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--/modal-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    
+    <script src="./index.js"></script>
+  </body>
+</html>
